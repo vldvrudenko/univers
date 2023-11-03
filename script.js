@@ -1,3 +1,4 @@
+alert("hi"!)
 function useInfo() {
   let name = document.getElementById("userFirstName").value;
 
