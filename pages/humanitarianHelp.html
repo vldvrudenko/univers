@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light rounded rounded-4 mt-4"
+      >
+        <a class="navbar-brand" href="/index.html"
+          ><img src="/img/logo.png" width="55"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-between">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="/pages/humanitarianHelp.html"
+                style="color: #005d6c"
+              >
+                <img
+                  src="../img/support.png"
+                  alt="support"
+                  width="25px"
+                  height="25px"
+                />
+                Гуманітарна допомога</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/pages/lowerHelp.html"
+                style="color: #005d6c"
+              >
+                <img
+                  src="../img/lawyer.png"
+                  alt="lawyer"
+                  width="25px"
+                  height="25px"
+                />
+                Юридична допомога</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/pages/psyhologicalHelp.html"
+                style="color: #005d6c"
+              >
+                <img
+                  src="../img/psyhologiessLogo.png"
+                  alt="psyhologiessLogo"
+                  width="25px"
+                  height="25px"
+                />
+                Психологічна допомога</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <a href="/pages/setting.html">
+          <img src="/img/user.png" alt="user" width="30" class="img-fluid" />
+        </a>
+      </nav>
+
+      <section class="container bg-danger rounded bg-light pb-4 pt-4 mt-4">
+        <div id="ConfirmBlock" class="mt-5 mb-5 displayNone">
+          <div class="text-center">
+            <img src="/img/confirm.svg" alt="confirm" width="120px" />
+            <h3 class="mt-5 colored">
+              Дякую за довіру та за час що Ви виділили для заповнення та
+              надсилання форм. У найближчий час наш адміністратор зв'жется з
+              Вами та надасть усі відповіді.
+            </h3>
+          </div>
+        </div>
+        <div id="askBlock">
+          <h1>Реєстрація</h1>
+          <h4 class="colored">
+            Для оформлення заявки на допомогу, заповніть анкету та вкажіть що
+            саме Вам необхідно. Ми внесемо Вас в реєстр та наш консультат
+            зв'яжиться з Вами як тільки Вашу заявку буде схвалено.
+          </h4>
+
+          <form class="row g-3" id="helpDesk">
+            <div class="col-md-3">
+              <label for="inputPassword4" class="form-label cardDopColor"
+                >Ім'я</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="userFirstName"
+                placeholder="Volodymyr"
+              />
+            </div>
+            <div class="col-md-3">
+              <label for="inputPassword4" class="form-label cardDopColor"
+                >Прізвище</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="userLastName"
+                placeholder="Rudenko"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label cardDopColor"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="userMail"
+                placeholder="test@gmail.com"
+              />
+            </div>
+
+            <div class="col-12">
+              <label for="inputAddress" class="form-label cardDopColor"
+                >Адресса</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="userAddress"
+                placeholder="1234 Main St"
+              />
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label cardDopColor"
+                >Місто</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="userCity"
+                placeholder="Kyiv"
+              />
+            </div>
+
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label cardDopColor">Zip</label>
+              <input
+                type="text"
+                class="form-control"
+                id="userZip"
+                placeholder="02-911"
+              />
+            </div>
+            <div class="row justify-content-around mt-4">
+              <div class="border col-2 rounded text-center pt-3 pb-3">
+                <img src="" alt="" />
+                <h3>Одяг</h3>
+                <input type="checkbox" id="clothId" name="choice" value="Одяг" />
+
+                <button
+                  class="colorbg text-light border-0 pt-2 pb-2"
+                  style="position: absolute; bottom: 0; left: 0; right: 0"
+                >
+                  Додати
+                </button>
+              </div>
+              <div
+                class="border col-2 rounded text-center"
+                style="height: 150px"
+              >
+                <img src="" alt="" />
+                <h3>Продукти</h3>
+                <p></p>
+                <input type="checkbox" name="choice" value="Продукти" />
+                <button
+                  class="colorbg text-light border-0 pt-2 pb-2"
+                  style="position: absolute; bottom: 0; left: 0; right: 0"
+                >
+                  Додати
+                </button>
+              </div>
+              <div class="border col-2 rounded text-center">
+                <img src="" alt="" />
+                <h3 class="text-center">Побутова хімія</h3>
+                <input type="checkbox" name="choice" value="Побутова хімія" />
+                <button
+                  class="colorbg text-light border-0 pt-2 pb-2"
+                  style="position: absolute; bottom: 0; left: 0; right: 0"
+                >
+                  Додати
+                </button>
+              </div>
+              <div class="border col-2 rounded text-center">
+                <img src="" alt="" />
+                <h3 class="text-center">Засоби гігієни</h3>
+                <input type="checkbox" name="choice" value="Засоби гігієни" />
+                <button
+                  class="colorbg text-light border-0 pt-2 pb-2"
+                  style="position: absolute; bottom: 0; left: 0; right: 0"
+                >
+                  Додати
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <div class="text-center mt-5">
+            <button
+              class="colorbg text-light rounded pt-2 pb-2 ps-5 pe-5"
+              onclick="useInfo()"
+            >
+              Замовити
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="text-center bg-light rounded pt-2 pb-2 mb-2 mt-4 cardDopColor"
+      >
+        <img src="/img/logo.png" alt="logo" width="30px" height="25px" />
+        Lans company limited
+      </footer>
+    </div>
+
+    <!-- Подключение скриптов Bootstrap (jQuery и Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
